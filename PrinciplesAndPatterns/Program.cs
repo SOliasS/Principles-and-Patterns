@@ -1,4 +1,5 @@
-﻿using PrinciplesAndPatterns.Singleton_Pattern;
+﻿using PrinciplesAndPatterns.Patterns.Adaptor;
+using PrinciplesAndPatterns.Singleton_Pattern;
 using System;
 
 namespace PrinciplesAndPatterns
@@ -7,7 +8,8 @@ namespace PrinciplesAndPatterns
     {
         static void Main(string[] args)
         {
-            IMain test = new SingletonMain();
+            IMain test = new AdaptorMain();
+            test = new SingletonMain();
         }
     }
 }

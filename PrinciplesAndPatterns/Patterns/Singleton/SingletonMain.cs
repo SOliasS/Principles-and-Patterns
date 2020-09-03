@@ -8,6 +8,7 @@ namespace PrinciplesAndPatterns.Singleton_Pattern
     {
         public void Start()
         {
+            //var test=SingeltonBase(); Cannot be used since the Constructor is private
             var instance=SingeltonBase.GetInstance();
         }
     }
